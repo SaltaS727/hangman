@@ -1,0 +1,140 @@
+body {
+    background-image: url('bck1.jpg');
+    background-size:cover; 
+    background-position: center;
+    background-repeat:repeat; 
+}
+
+main {
+    max-width: 610px;
+    margin: auto;
+    background-color: #333; /* Dark background for the content */
+    border: 2px solid #b30000; /* Red border around the main content */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Shadow for a layered effect */
+}
+
+h1, h5 {
+    text-align: center;
+    color: #ffd700; /* Golden color for a luxurious look */
+    font-family: 'Cinzel', serif; /* Cinema-inspired serif font */
+}
+
+.win {
+    color: #fff;
+    background-color: #4CAF50; /* Winning style in dark green */
+    border: 2px solid #388E3C;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.loss {
+    color: #fff;
+    background-color: #D32F2F; /* Losing style in dark red */
+    border: 2px solid #b71c1c;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 26pt;
+    color: #ffd700; /* Golden color for the main word display */
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#guesses {
+    text-align: center;
+    font-size: 18pt;
+    color: #ffd700; /* Golden color to match the cinema theme */
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #b30000; /* Red border to match cinema seats */
+    border-radius: 10px;
+    margin: 5px;
+    color: #ffd700; /* Gold color for letters */
+    cursor: pointer;
+    background-color: #1c1c1c; /* Dark background for each letter box */
+    transition: background-color 0.3s ease;
+}
+
+.guess:hover {
+    background-color: #b30000; /* Red hover effect for each letter box */
+}
+
+@media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+    #guesses {
+        text-align: center;
+        font-size: 24pt;
+        color: #ffd700;
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    .guess {
+        padding: 20px;
+        display: inline-block;
+        border: 2px solid #b30000;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: #1c1c1c;
+    }
+}
+#controls {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 15px; /* Space between the input box and the button container */
+    margin-top: 20px;
+}
+
+#guessBox {
+    height: 60px;
+    border-radius: 10px;
+    font-size: 18pt;
+    width: 250px;
+    padding-left: 10px;
+    border: 2px solid #b30000; /* Red border around input box */
+    background-color: #1c1c1c;
+    color: #ffd700; /* Gold text color in input */
+    text-align: center;
+}
+
+.button-container {
+    display: flex; /* Align buttons on the same line */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally within container */
+}
+  
+.button {
+    padding: 15px 25px;
+    font-size: 18pt;
+    cursor: pointer;
+    color: #333;
+    background-color: #ffd700; /* Gold color for buttons */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #b30000; /* Red shadow for cinema effect */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: #e6ac00; /* Slightly darker gold on hover */
+}
+
+.button:active {
+    background-color: #e6ac00;
+    box-shadow: 0 5px #800000; /* Dark red shadow when pressed */
+    transform: translateY(4px);
+}
